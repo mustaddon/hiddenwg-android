@@ -63,18 +63,18 @@ class Application : android.app.Application() {
 
     private suspend fun determineBackend(): Backend {
         var backend: Backend? = null
-        if (UserKnobs.enableKernelModule.first() && WgQuickBackend.hasKernelSupport()) {
-            try {
-                rootShell.start()
-                val wgQuickBackend = WgQuickBackend(applicationContext, rootShell, toolsInstaller)
-                wgQuickBackend.setMultipleTunnels(UserKnobs.multipleTunnels.first())
-                backend = wgQuickBackend
-                UserKnobs.multipleTunnels.onEach {
-                    wgQuickBackend.setMultipleTunnels(it)
-                }.launchIn(coroutineScope)
-            } catch (ignored: Exception) {
-            }
-        }
+        // if (UserKnobs.enableKernelModule.first() && WgQuickBackend.hasKernelSupport()) {
+        //     try {
+        //         rootShell.start()
+        //         val wgQuickBackend = WgQuickBackend(applicationContext, rootShell, toolsInstaller)
+        //         wgQuickBackend.setMultipleTunnels(UserKnobs.multipleTunnels.first())
+        //         backend = wgQuickBackend
+        //         UserKnobs.multipleTunnels.onEach {
+        //             wgQuickBackend.setMultipleTunnels(it)
+        //         }.launchIn(coroutineScope)
+        //     } catch (ignored: Exception) {
+        //     }
+        // }
         if (backend == null) {
             backend = GoBackend(applicationContext)
             GoBackend.setAlwaysOnCallback { get().applicationScope.launch { get().tunnelManager.restoreState(true) } }
