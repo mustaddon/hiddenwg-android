@@ -2,6 +2,10 @@
 	path = tunnel/tools/wireguard-tools
 	url = https://github.com/mustaddon/wireguard-tools
 	branch = test
+[submodule "tunnel/tools/wireguard-go"]
+	path = tunnel/tools/wireguard-go
+	url = https://github.com/mustaddon/wireguard-go
+	branch = test4
 [submodule "tunnel/tools/elf-cleaner"]
 	path = tunnel/tools/elf-cleaner
 	url = https://github.com/termux/termux-elf-cleaner
