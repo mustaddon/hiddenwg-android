@@ -20,11 +20,11 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/mustaddon/wireguard-go/conn"
-	"github.com/mustaddon/wireguard-go/device"
-	"github.com/mustaddon/wireguard-go/ipc"
-	"github.com/mustaddon/wireguard-go/tun"
 	"golang.org/x/sys/unix"
+	"golang.zx2c4.com/wireguard/conn"
+	"golang.zx2c4.com/wireguard/device"
+	"golang.zx2c4.com/wireguard/ipc"
+	"golang.zx2c4.com/wireguard/tun"
 )
 
 type AndroidLogger struct {
@@ -213,7 +213,7 @@ func wgVersion() *C.char {
 		return C.CString("unknown")
 	}
 	for _, dep := range info.Deps {
-		if dep.Path == "github.com/mustaddon/wireguard-go" {
+		if dep.Path == "golang.zx2c4.com/wireguard" {
 			parts := strings.Split(dep.Version, "-")
 			if len(parts) == 3 && len(parts[2]) == 12 {
 				return C.CString(parts[2][:7])
