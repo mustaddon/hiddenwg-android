@@ -6,7 +6,7 @@ replace golang.zx2c4.com/wireguard => ../wireguard-go
 
 require (
 	golang.org/x/sys v0.33.0
-	golang.zx2c4.com/wireguard v1.0.1
+	golang.zx2c4.com/wireguard v1.0.2
 )
 
 require (
