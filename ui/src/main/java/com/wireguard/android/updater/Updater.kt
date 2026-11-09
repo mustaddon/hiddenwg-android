@@ -221,19 +221,20 @@ object Updater {
     }
 
     private fun checkForUpdates(): Update? {
-        val connection = URL(UPDATE_URL_FMT.format(LATEST_FILE)).openConnection() as HttpURLConnection
-        connection.setRequestProperty("User-Agent", Application.USER_AGENT)
-        connection.connect()
-        if (connection.responseCode != HttpURLConnection.HTTP_OK)
-            throw IOException(connection.responseMessage)
-        var fileListBytes = ByteArray(1024 * 512 /* 512 KiB */)
-        connection.inputStream.use {
-            val len = it.read(fileListBytes)
-            if (len <= 0)
-                throw IOException("File list is empty")
-            fileListBytes = fileListBytes.sliceArray(0 until len)
-        }
-        return verifySignedFileList(fileListBytes.decodeToString()).maxByOrNull { it.version }
+        return null
+        // val connection = URL(UPDATE_URL_FMT.format(LATEST_FILE)).openConnection() as HttpURLConnection
+        // connection.setRequestProperty("User-Agent", Application.USER_AGENT)
+        // connection.connect()
+        // if (connection.responseCode != HttpURLConnection.HTTP_OK)
+        //     throw IOException(connection.responseMessage)
+        // var fileListBytes = ByteArray(1024 * 512 /* 512 KiB */)
+        // connection.inputStream.use {
+        //     val len = it.read(fileListBytes)
+        //     if (len <= 0)
+        //         throw IOException("File list is empty")
+        //     fileListBytes = fileListBytes.sliceArray(0 until len)
+        // }
+        // return verifySignedFileList(fileListBytes.decodeToString()).maxByOrNull { it.version }
     }
 
     private suspend fun downloadAndUpdate() = withContext(Dispatchers.IO) {
