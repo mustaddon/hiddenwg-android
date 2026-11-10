@@ -10,6 +10,7 @@
 Thumbs.db
 build/
 *.apk
+*.apk.idsig
 *.class
 *.dex
 *.iml
