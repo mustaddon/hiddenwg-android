@@ -8,7 +8,7 @@
 
     <data>
 
-        <import type="com.wireguard.android.util.ClipboardUtils" />
+        <import type="com.hiddenwg.android.util.ClipboardUtils" />
 
         <variable
             name="item"

@@ -8,19 +8,19 @@
 
     <data>
 
-        <import type="com.wireguard.android.util.ClipboardUtils" />
+        <import type="com.hiddenwg.android.util.ClipboardUtils" />
 
-        <import type="com.wireguard.android.widget.KeyInputFilter" />
+        <import type="com.hiddenwg.android.widget.KeyInputFilter" />
 
-        <import type="com.wireguard.android.widget.NameInputFilter" />
+        <import type="com.hiddenwg.android.widget.NameInputFilter" />
 
         <variable
             name="fragment"
-            type="com.wireguard.android.fragment.TunnelEditorFragment" />
+            type="com.hiddenwg.android.fragment.TunnelEditorFragment" />
 
         <variable
             name="config"
-            type="com.wireguard.android.viewmodel.ConfigProxy" />
+            type="com.hiddenwg.android.viewmodel.ConfigProxy" />
 
         <variable
             name="name"

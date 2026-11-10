@@ -1,6 +1,6 @@
 [submodule "tunnel/tools/wireguard-tools"]
 	path = tunnel/tools/wireguard-tools
-	url = https://github.com/WireGuard/wireguard-tools
+	url = https://github.com/mustaddon/hiddenwg-tools
 [submodule "tunnel/tools/wireguard-go"]
 	path = tunnel/tools/wireguard-go
 	url = https://github.com/mustaddon/hiddenwg-go
