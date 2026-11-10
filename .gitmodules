@@ -3,7 +3,7 @@
 	url = https://github.com/WireGuard/wireguard-tools
 [submodule "tunnel/tools/wireguard-go"]
 	path = tunnel/tools/wireguard-go
-	url = https://github.com/mustaddon/wireguard-go
+	url = https://github.com/mustaddon/hiddenwg-go
 [submodule "tunnel/tools/elf-cleaner"]
 	path = tunnel/tools/elf-cleaner
 	url = https://github.com/termux/termux-elf-cleaner
