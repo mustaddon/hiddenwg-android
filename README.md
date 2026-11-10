@@ -4,14 +4,14 @@ This repository is a [fork](https://github.com/WireGuard/wireguard-android/) tha
 
 ## Download &amp; Install
 
-[Releases](https://github.com/mustaddon/wireguard-android/releases) &ndash; Select the latest version of the APK file.
+[Releases](https://github.com/mustaddon/hiddenwg-android/releases) &ndash; Select the latest version of the APK file.
 
 ## Building
 
-```
-$ git clone --recurse-submodules https://github.com/mustaddon/wireguard-android.git
-$ cd wireguard-android
-$ ./gradlew assembleRelease
+```bash
+git clone --recurse-submodules https://github.com/mustaddon/hiddenwg-android.git
+cd hiddenwg-android
+bash build.sh
 ```
 
 macOS users may need [flock(1)](https://github.com/discoteq/flock).
