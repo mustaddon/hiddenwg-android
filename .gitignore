@@ -1,5 +1,6 @@
 /.gradle/
 /.kotlin/
+/.vscode/
 /.idea/*.xml
 /.idea/caches/
 /.idea/dictionaries/
