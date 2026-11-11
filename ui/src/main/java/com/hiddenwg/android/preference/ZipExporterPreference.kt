@@ -43,7 +43,7 @@ class ZipExporterPreference(context: Context, attrs: AttributeSet?) : Preference
                     if (configs.isEmpty()) {
                         throw IllegalArgumentException(context.getString(R.string.no_tunnels_error))
                     }
-                    val outputFile = downloadsFileSaver.save("wireguard-export.zip", "application/zip", true)
+                    val outputFile = downloadsFileSaver.save("hiddenwg-export.zip", "application/zip", true)
                     if (outputFile == null) {
                         withContext(Dispatchers.Main.immediate) {
                             isEnabled = true
