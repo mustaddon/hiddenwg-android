@@ -83,9 +83,9 @@ publishing {
                 from(components["release"])
             }
             pom {
-                name = "WireGuard Tunnel Library"
-                description = "Embeddable tunnel library for WireGuard for Android"
-                url = "https://www.wireguard.com/"
+                name = "HiddenWG Tunnel Library"
+                description = "Embeddable tunnel library for HiddenWG for Android"
+                url = "https://github.com/mustaddon/hiddenwg-android/"
 
                 licenses {
                     license {
@@ -95,18 +95,18 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:https://git.zx2c4.com/wireguard-android"
-                    developerConnection = "scm:git:https://git.zx2c4.com/wireguard-android"
-                    url = "https://git.zx2c4.com/wireguard-android"
+                    connection = "scm:git:https://github.com/mustaddon/hiddenwg-android"
+                    developerConnection = "scm:git:https://github.com/mustaddon/hiddenwg-android"
+                    url = "https://github.com/mustaddon/hiddenwg-android"
                 }
                 developers {
                     organization {
-                        name = "WireGuard"
-                        url = "https://www.wireguard.com/"
+                        name = "HiddenWG"
+                        url = "https://github.com/mustaddon/hiddenwg/"
                     }
                     developer {
-                        name = "WireGuard"
-                        email = "team@wireguard.com"
+                        name = "HiddenWG"
+                        email = "mustaddon@gmail.com"
                     }
                 }
             }

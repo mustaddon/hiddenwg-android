@@ -1,4 +1,4 @@
-# Android GUI for HiddenWG
+# Android GUI for [HiddenWG](https://github.com/mustaddon/hiddenwg/)
 
 This repository is a [fork](https://github.com/WireGuard/wireguard-android/) that adds obfuscation to the standard [WireGuard](https://www.wireguard.com/) protocol.
 

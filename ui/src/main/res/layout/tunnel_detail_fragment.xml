@@ -8,17 +8,17 @@
 
     <data>
 
-        <import type="com.wireguard.android.backend.Tunnel.State" />
+        <import type="com.hiddenwg.android.backend.Tunnel.State" />
 
-        <import type="com.wireguard.android.util.ClipboardUtils" />
+        <import type="com.hiddenwg.android.util.ClipboardUtils" />
 
         <variable
             name="fragment"
-            type="com.wireguard.android.fragment.TunnelDetailFragment" />
+            type="com.hiddenwg.android.fragment.TunnelDetailFragment" />
 
         <variable
             name="tunnel"
-            type="com.wireguard.android.model.ObservableTunnel" />
+            type="com.hiddenwg.android.model.ObservableTunnel" />
 
         <variable
             name="config"
@@ -60,7 +60,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.wireguard.android.widget.ToggleSwitch
+                    <com.hiddenwg.android.widget.ToggleSwitch
                         android:id="@+id/tunnel_switch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
